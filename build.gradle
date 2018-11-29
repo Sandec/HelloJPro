@@ -13,6 +13,7 @@ buildscript {
 
   dependencies {
     classpath 'com.sandec.jpro:jpro-plugin-gradle:2018.1.9'
+    classpath "SANDEC:simplefx-plugin-gradle:$SIMPLEFX_VERSION"
   }
 }
 
@@ -35,19 +36,24 @@ repositories {
 dependencies {
 // Add your dependencies here, for example:
 // compile group: 'org.controlsfx', name: 'controlsfx', version: '8.40.14'
+  compile "com.sandec:mdfx:0.1.6"
+
+  compile group: 'org.apache.commons', name: 'commons-email', version: '1.5'
+  compile group: 'commons-io', name: 'commons-io', version: '2.5'
+
 }
 
 /**
  ******************  jpro Configuration ******************
  */
 apply plugin: 'com.sandec.jpro'
-
+apply plugin: 'de.sandec.simplefx'
 
 /**
  * App Main Class
  */
-//mainClassName = 'com.jpro.hellojpro.HelloJPro'
-mainClassName = 'com.jpro.hellojpro.HelloJProFXML'
+//mainClassName = 'com.jpro.md.HelloJPro'
+mainClassName = 'mddemo.JavafxDays'
 
 /**
  * jpro settings

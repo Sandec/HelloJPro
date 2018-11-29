@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ScalaCompilerConfiguration">
+    <parameters>
+      <parameter value="-Xms2g" />
+      <parameter value="-Xmx2g" />
+      <parameter value="-XX:MaxPermSize=2048M" />
+      <parameter value="-Xss256M" />
+      <parameter value="-XX:+CMSClassUnloadingEnabled" />
+      <parameter value="-XX:+UseConcMarkSweepGC" />
+    </parameters>
+    <profile name="Gradle 1" modules="JPro-MD-Demo_main,JPro-MD-Demo_test">
+      <option name="deprecationWarnings" value="true" />
+      <option name="uncheckedWarnings" value="true" />
+      <parameters>
+        <parameter value="-target:jvm-1.8" />
+      </parameters>
+      <plugins>
+        <plugin path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.scalameta/paradise_2.11.12/3.0.0-M11/b7b8ea7767b31caedf20f446937173397522fa9c/paradise_2.11.12-3.0.0-M11.jar" />
+      </plugins>
+    </profile>
+  </component>
+</project>

@@ -1,4 +1,4 @@
-package com.jpro.hellojpro;
+package com.jpro.md;
 
 import com.jpro.webapi.JProApplication;
 import javafx.fxml.FXMLLoader;
@@ -19,7 +19,7 @@ public class HelloJProFXML extends JProApplication
     public void start(Stage stage)
     {
         //load user interface as FXML file
-        FXMLLoader loader = new FXMLLoader(getClass().getResource("/com/jpro/hellojpro/fxml/HelloJPro.fxml"));
+        FXMLLoader loader = new FXMLLoader(getClass().getResource("/com/jpro/md/fxml/HelloJPro.fxml"));
         Scene scene = null;
         try
         {

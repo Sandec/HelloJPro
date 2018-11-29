@@ -1,4 +1,4 @@
-package com.jpro.hellojpro;
+package com.jpro.md;
 
 import javafx.application.Application;
 import javafx.geometry.Pos;
