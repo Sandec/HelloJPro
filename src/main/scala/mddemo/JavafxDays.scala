@@ -19,9 +19,7 @@ object JavafxDays extends App
     padding = Insets(50,50,50,50)
   }
 
-
-
-  scene = new Scene(md, 600, 450, Color.LIGHTBLUE)
+  scene = new Scene(md, 600, 5000, Color.LIGHTBLUE)
 
 }
 
