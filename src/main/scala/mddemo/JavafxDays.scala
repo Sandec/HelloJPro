@@ -17,6 +17,16 @@ object JavafxDays extends App
   println("----------------")
   val md = new VBox(new MDfxNode (defaultdoc)) {
     padding = Insets(50,50,50,50)
+
+    override def layoutChildren(): Unit = {
+      println("## LAYOUT CHILDREN")
+      if ((this.scene ne null) && WebAPI.isBrowser) {
+        WebAPI.getWebAPI(this.scene).requestLayout(this.scene)
+        super.layoutChildren()
+      } else {
+        super.layoutChildren()
+      }
+    }
   }
 
   scene = new Scene(md, 600, 5000, Color.LIGHTBLUE)
