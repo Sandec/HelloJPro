@@ -1,6 +1,8 @@
 package mddemo
 
 import java.nio.charset.Charset
+
+import com.jpro.webapi.WebAPI
 import simplefx.core._
 import simplefx.all._
 
